@@ -1,0 +1,133 @@
+body {
+    background-image: url(Assets/tile.jpg);
+}
+
+/* TITLE IMAGE  */
+
+.titlediv {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+/* INPUT TASK DATE TIME SECTION */
+
+.input-row {
+    margin: auto;
+    width: 600px;
+}
+
+.input-col {
+    background-image: url(Assets/formbg.jpg);
+    background-size: auto;
+    width: 600px;
+    height: 280px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+/* FORM INPUT AND BUTTON  */
+
+.form-control {
+    margin-left: 70px;
+    width: 400px;
+    margin-bottom: 10px;
+    background: transparent !important;
+}
+
+.mytask {
+    border: none;
+    margin-top: -9px;
+}
+
+.mytime, .mydate {
+    width: 150px !important;
+    border: none;
+    margin-top: 35px;
+}
+
+.mybtn {
+    font-weight: 700;
+    width: 100px;
+}
+
+.mybtn {
+    color: rgb(0, 0, 134);
+    background: transparent !important;
+    border: none;
+    margin-top: 25px;
+}
+
+.mybtn:hover {
+    background: none;
+    border: none;
+    color: rgb(0, 255, 0);
+}
+
+.addBtn {
+    margin-right: 10px;
+    margin-left: 176px;
+}
+
+/* NEW NOTE/TASK CREATED DIV  */
+
+.newNote {
+    background-image: url(Assets/notebg.png);
+    background-size: auto;
+    width: 175px;
+    height: 230px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 10px;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+/* FADE FX  */
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* INFO ON NOTE ADDED */
+
+.date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 8px;
+    margin-bottom: -2px;
+}
+
+.text {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-left: 13px;
+    margin-top: 20px;
+    position: absolute;
+    top: 10px;
+}
+
+/* X CLOSE BUTTON  */
+
+.iconx {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    visibility: hidden;
+    margin-right: 1px;
+    z-index: 2;
+}
+
+.newNote:hover .iconx {
+    visibility: visible;
+}
